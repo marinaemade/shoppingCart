@@ -16,11 +16,11 @@ const Buttons = ({products,setProducts }) => {
 
   const empty = ()=>{
     setProducts([]);
+    
   }
 
   return (
       <div className="flex gap-4 items-center justify-center ">
-        <button className="btn btn-accent">D/L</button>
         <button className="btn btn-accent" onClick={()=>reset()}>RESET</button>
         <button className="btn btn-accent" onClick={()=>empty()}>EMPTY</button>
       </div>

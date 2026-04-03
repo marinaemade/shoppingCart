@@ -53,7 +53,7 @@ const App = () => {
 
   return (
     <>
-      <Nav />
+      <Nav products={products}/>
       <Cart products={products} setProducts={setProducts} increment={increment} decrement={decrement} remove={remove}  />
     </>
   )

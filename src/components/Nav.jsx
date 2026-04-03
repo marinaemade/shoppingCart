@@ -1,4 +1,5 @@
-const Nav = () => {
+import CartItemsCount from "./Cart/CartItemsCount"; 
+const Nav = ({ products }) => {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-none">
@@ -17,7 +18,7 @@ const Nav = () => {
       <div className="flex-1">
         <a className="btn btn-ghost text-xl">YOUR STORE</a>
       </div>
-      
+      <CartItemsCount products={products} />
       {/* dark/light */}
       <label className="swap swap-rotate" >
         {/* this hidden checkbox controls the state */}
